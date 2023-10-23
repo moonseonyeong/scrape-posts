@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowJs": true,
+    "target": "es2017",
+    "outDir": "./dist",
+    "moduleResolution": "Node",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "baseUrl": "./",
+    "declaration": true
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["./src", "**/*.ts"],
+  "exclude": ["node_modules"]
+}
