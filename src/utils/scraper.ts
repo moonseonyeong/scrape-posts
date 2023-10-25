@@ -16,8 +16,8 @@ export const getPostLinks = async (page: Page) =>
 
 export const getLikeCnt = async (page: Page) => {
   const likeCnt = await page.evaluate(() => {
-    const targetDiv = document.querySelector('[data-testid]');
-    const spanElement = targetDiv.querySelector('span');
+    const targetBtn = document.querySelector('[data-testid]');
+    const spanElement = targetBtn.querySelector('span');
     const spanValue = spanElement.textContent;
 
     return spanValue;
